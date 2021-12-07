@@ -1,18 +1,26 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <nav class="navbar navbar-expand-md">
   <!-- Brand -->
-  <a class="navbar-brand" href="#">XYZPharma</a>
+  <a class="navbar-brand mb-0 h1" href="#">XYZPharma</a>
   <!-- button on collapse -->
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="collapsibleNavbar">
     <ul class="navbar-nav navStyle">
-      <!-- Add Router links here -->  
-      <a [routerLink]='["/home"]' routerLinkActive="active" class="nav-link">Home</a>  
-      <a [routerLink]='["/products"]' routerLinkActive="active" class="nav-link">Products</a>
-      <a [routerLink]='["/investors"]' routerLinkActive="active" class="nav-link">Investors</a>
-      <a [routerLink]='["/aboutus"]' routerLinkActive="active" class="nav-link">About Us</a>  
+      <!-- Add Router links here -->
+      <li class="nave-item">
+        <a [routerLink]='["/home"]' routerLinkActive="active" class="nav-link">Home</a>
+      </li>
+      <li class="nave-item">
+        <a [routerLink]='["/products"]' routerLinkActive="active" class="nav-link">Products</a>
+      </li>
+      <li class="nave-item">
+        <a [routerLink]='["/investors"]' routerLinkActive="active" class="nav-link">Investors</a>
+      </li>
+      <li class="nave-item">
+        <a [routerLink]='["/aboutus"]' routerLinkActive="active" class="nav-link">About Us</a>
+      </li>
     </ul>
   </div>
 </nav>

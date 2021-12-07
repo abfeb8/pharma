@@ -1,23 +1,32 @@
-nav{
+nav {
     background-color: teal;
 }
-.navbar{
+
+.navbar {
     border: 0px;
     border-radius: 0px;
     background-color: teal;
 }
-.navLinkAlign{
+
+.navLinkAlign {
     padding-left: 300px;
 }
-li{
-        padding-right: 120px;
+
+li {
+    padding-right: 120px;
 }
-.navtext{
+
+.navtext {
     color: white;
 }
-.navStyle{
-    margin-left:150px ;
+
+.navStyle {
+    margin-left: 150px;
 }
-.navbar-brand,.nav-link{
+
+.navbar-brand, .nav-link {
     color: white;
+}
+.navbar-brand{
+    padding-left: 20px;
 }
