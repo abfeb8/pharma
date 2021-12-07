@@ -34,14 +34,20 @@
 }
 .card{
     
-    width: 400px;
+    width: 360px;
     padding: 10px;
     background-color: #66b2b2;
 
 }
+
 .card-img-top{
     width: 340px;
     height: 200px;
+    padding-bottom: 5px;
+}
+
+.card-text{
+    margin-bottom: 20px;
 }
 .size{
     font-size: 35px;

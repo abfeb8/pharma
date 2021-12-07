@@ -5,8 +5,13 @@
 }
 .card-header,.card-footer{
     background-color: #66b2b2;
+    margin: 0;
+    
 }
 .card-body{
     background-color: #b2d8d8;
 
+}
+li{
+    margin: 15px 0;
 }

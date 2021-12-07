@@ -1,5 +1,25 @@
 <div>
   <div class="card">
     <!-- code here to display the full details of the specific product as card -->
+    <div class="card-header">
+      <h1 class="card-title">{{productDetail["name"]}}</h1>
+    </div>
+    <div class="card-body">
+      <ul>
+        <li class="card-text">
+          <div><strong>Salt Compostion: </strong></div>{{productDetail["saltCompostion"]}}
+        </li>
+        <li class="card-text">
+          <div><strong>About: </strong></div>{{productDetail["about"]}}
+        </li>
+        <li class="card-text">
+          <div><strong>Uses: </strong></div>{{productDetail["use"]}}
+        </li>
+        <li class="card-text">
+          <div><strong>Side Effects: </strong></div>{{productDetail["sideEffects"]}}
+        </li>
+      </ul>
+    </div>
+    <div class="card-footer"><strong>Note: </strong>consumption as prescribed by Phsycian</div>
   </div>
 </div>

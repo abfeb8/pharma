@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import {HttpClient} from '@angular/common/http';
-import { Observable } from 'rxjs';
+import { filter, Observable } from 'rxjs';
 import {Product} from './product';
 
 @Injectable({
@@ -9,10 +9,10 @@ import {Product} from './product';
 export class ProductDetailService {
 
   //Inject the HttpClient object to the constructor
-  constructor() { }
+  constructor(private http: HttpClient) { }
 
-  // getTabDetail(val):Observable<Product[]> {
-  //   // make a GET call to "http://localhost:3000/products"
-  //   return 
-  // }
+  getTabDetail(val:any):Observable<Product[]> {
+    // make a GET call to "http://localhost:3000/products"
+    return this.http.get<Product[]>("http://localhost:3000/products");
+  }
 }
