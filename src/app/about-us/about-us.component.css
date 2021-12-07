@@ -12,6 +12,7 @@ nav{
 }
 li{
         padding-right: 120px;
+        margin-left: 20px;
 }
 .navtext{
     color: white;

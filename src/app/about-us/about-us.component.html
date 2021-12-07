@@ -4,7 +4,8 @@
       <div class="subgrid1">About XYZPharma</div>
       <hr>
       <div class="aboutContent">
-        <!-- code here to display aboutUsDetail -->
+        <!-- code here to display aboutUsDetail --> 
+        {{aboutUsDetail}}
       </div>
     </div>
     <div class="awards">
@@ -13,6 +14,8 @@
       </div>
       <hr>
               <!-- code here to display awards won as a list -->
+              <li *ngFor="let award of awards">{{award}}</li>
+    
     </div>
     <div class="contact">
       <div class="subgrid1">
