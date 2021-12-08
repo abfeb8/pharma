@@ -5,11 +5,12 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 export class CheckcasingPipe implements PipeTransform {
 
-  transform(value:string, args?: any): any {
-    
-    //convert quater to uppercase and then combine the quater and year entered 
-    return 
-    
+  transform(value: string, args?: string[]): string {
+
+    //convert quater to uppercase and then combine the quater and year entered
+    return value.toUpperCase()+args;
+
+
   }
 
 }

@@ -18,6 +18,10 @@ form{
     width: 1600px;
     margin-left: 10px;
     padding-top:20px;
+    display: flex;
+}
+form>div{
+    margin-right:20px;
 }
 .qd{
     font-size: 20px;
