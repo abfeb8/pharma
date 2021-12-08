@@ -19,12 +19,12 @@ export class ProductsComponent implements OnInit {
   constructor(private service: ProductsService, private route: Router) { }
 
   // implement getSpecificProducts() that will filter the details of the specific product registed for from the product list
-  getSpecificProducts(val: any) {
+  getSpecificProducts(val: string) {
     //implement call to getAllProducts() in productsService
     this.displaysearch = true;
     let check: boolean = false;
     this.allProduct.forEach(prod => {  
-      if (prod.name === val) {
+      if (prod.name.toLowerCase() === val.toLowerCase()) {
         this.searchedProduct = prod;
         check = true;
         this.showError = false;
