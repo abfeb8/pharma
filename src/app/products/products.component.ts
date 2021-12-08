@@ -12,7 +12,7 @@ export class ProductsComponent implements OnInit {
   allProduct: Product[] = [];
   displaysearch: boolean = false;
   searchedProduct!: Product;
-  errorMessage: string = "This medecine is not manufactured by XYZPharma";
+  errorMessage: string = "Sorry this medecine is not manufactured by XYZPharma";
   showError: boolean = false;
 
   //Inject the Router and ProductsService object to the constructor

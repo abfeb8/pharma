@@ -32,7 +32,7 @@
     <!-- implement a table to show the details of the quater selected if the quater detail is available -->
     <div *ngIf="!showError && showTable">
         <table class="table table-bordered">
-            <thead class="thead-dark">
+            <thead class="table-active">
                 <th>Quarter</th>
                 <th>Sales</th>
                 <th>Other Income</th>
@@ -42,16 +42,18 @@
                 <th>Tax</th>
                 <th>Net Profit</th>
             </thead>
-            <tr>
-                <td>{{quaterDetails.quater}}</td>
-                <td>{{quaterDetails.result.sales}}</td>
-                <td>{{quaterDetails.result.otherIncome}}</td>
-                <td>{{quaterDetails.result.grossProfit}}</td>
-                <td>{{quaterDetails.result.Depreciation}}</td>
-                <td>{{quaterDetails.result.Interest}}</td>
-                <td>{{quaterDetails.result.Tax}}</td>
-                <td>{{quaterDetails.result.netProfit}}</td>
-            </tr>
+            <tbody>
+                <tr>
+                    <td>{{quaterDetails.quater}}</td>
+                    <td>{{quaterDetails.result.sales}}</td>
+                    <td>{{quaterDetails.result.otherIncome}}</td>
+                    <td>{{quaterDetails.result.grossProfit}}</td>
+                    <td>{{quaterDetails.result.Depreciation}}</td>
+                    <td>{{quaterDetails.result.Interest}}</td>
+                    <td>{{quaterDetails.result.Tax}}</td>
+                    <td>{{quaterDetails.result.netProfit}}</td>
+                </tr>
+            </tbody>
         </table>
     </div>
     <div *ngIf="showError" class="error">
