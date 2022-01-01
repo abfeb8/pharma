@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, ParamMap } from '@angular/router';
+import { ActivatedRoute } from '@angular/router';
 import { ProductDetailService } from './product-detail.service';
 import { Product } from './product'
 import { __values } from 'tslib';

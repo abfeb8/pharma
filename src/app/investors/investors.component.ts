@@ -5,7 +5,7 @@ import { InvestorsService } from './investors.service';
 import { CheckcasingPipe } from './checkcasing.pipe';
 @Component({
   selector: 'app-investors',
-  templateUrl: './investors.component.html',
+  // templateUrl: './investors.component.html',
   styleUrls: ['./investors.component.css']
 })
 export class InvestorsComponent implements OnInit {
@@ -28,7 +28,7 @@ export class InvestorsComponent implements OnInit {
     //fyear: required validation
     this.quaterForm = this.formBuilder.group({
       quater: ["", Validators.required],
-      fyear: ["", Validators.required]
+      fyear: ["", Validators.required, Validators.email]
     })
   }
 
